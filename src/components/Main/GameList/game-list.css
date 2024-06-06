@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Jaro:opsz@6..72&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Reddit+Mono:wght@200..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');.game-list{
+}
+.game-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.game-card{
+    width: 20%;
+    border-radius: 10px;
+    margin: 5px;
+    position: relative;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.game-image{
+    width: 100%;
+    height: 40vh;
+    border-radius: 5px;
+}
+.game-name{
+    font-size:20px;
+    padding-left: 5px;
+    width: 70%;
+    height: 30px;
+}
+.game-container{
+    display: flex;
+    flex-direction: column;
+}
+.next-prev-buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.next-prev-buttons button{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: aliceblue;
+}
+.add-to-wishlist{
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    font-size: 30px;
+    color: white;
+}
+.add-to-wishlist:hover{
+    color: red;
+}
+.add-to-wishlist:active{
+    color: green;
+}
+.game-image:hover{
+ 
+    
+}

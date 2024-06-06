@@ -1,0 +1,10 @@
+.ads{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    font-size:50px;
+}
+body{
+    background: linear-gradient(to right,rgb(36, 36, 82),rgba(0, 0, 0, 0.776));
+    color: white;
+}
