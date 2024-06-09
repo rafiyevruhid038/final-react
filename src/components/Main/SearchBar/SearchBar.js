@@ -1,19 +1,35 @@
-import React, { useState } from 'react'
-import './searchbar.css'
+import React, { useState } from 'react';
+import './searchbar.css';
 
-const SearchBar = ({onSearch}) => {
-  const[inputValue,setInputValue] = useState("")
-  const handleSubmit=(e)=>{
-    e.preventDefault()
-    onSearch(inputValue)
+const SearchBar = ({ onSearch }) => {
+  const [searchText, setSearchText] = useState('');
 
+  const handleInputChange = (e) => {
+    setSearchText(e.target.value);
   };
-    return (
-    <form className='search-bar' onSubmit={handleSubmit}>
-        <input type="text" placeholder="Write name of the game" value={inputValue} onChange={(e)=>setInputValue(e.target.value)} />
-        <button type="submit">Search</button>
-    </form>
-  )
+
+  const handleSearch = () => {
+    onSearch(searchText);
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
+
+  return (
+    <div className='search-bar'>
+      <input
+        type='text'
+        placeholder='Search games...'
+        value={searchText}
+        onChange={handleInputChange}
+        onKeyPress={handleKeyPress}
+      />
+      <button onClick={handleSearch}>Search</button>
+    </div>
+  );
 }
 
-export default SearchBar
+export default SearchBar;

@@ -1,60 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Jaro:opsz@6..72&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Reddit+Mono:wght@200..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');.game-list{
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Jaro:opsz@6..72&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Reddit+Mono:wght@200..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
-.game-list{
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.game-list {
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
 }
-.game-card{
+
+.game-card {
     width: 20%;
     border-radius: 10px;
     margin: 5px;
     position: relative;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #000000;
+    transition: transform 0.3s;
+    height: 380px;
 }
-.game-image{
+
+.game-card:hover {
+    transform: translateY(-10px);
+}
+
+.game-image {
     width: 100%;
-    height: 40vh;
-    border-radius: 5px;
+    
 }
-.game-name{
-    font-size:20px;
-    padding-left: 5px;
-    width: 70%;
-    height: 30px;
+
+.game-name {
+    font-size: 1.2rem;
+    color: white;
 }
-.game-container{
+.game-price{
+    text-align: right;
+    margin-right: 5px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.next-prev-buttons {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
 }
-.next-prev-buttons{
-    display: flex;
-    justify-content: space-around;
-}
-.next-prev-buttons button{
-    width: 20vw;
-    height: 5vh;
+
+.next-prev-buttons button {
+    width: 45%;
+    height: 50px;
     border-radius: 10px;
     border: none;
     outline: none;
-    background-color: black;
-    color: aliceblue;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-.add-to-wishlist{
+
+.next-prev-buttons button:hover {
+    background-color: #555;
+}
+
+.add-to-wishlist {
     position: absolute;
-    top: 0px;
-    right: 5px;
-    font-size: 30px;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
     color: white;
+    cursor: pointer;
+    transition: color 0.3s;
 }
-.add-to-wishlist:hover{
+
+.add-to-wishlist:hover {
     color: red;
 }
-.add-to-wishlist:active{
+
+.add-to-wishlist:active {
     color: green;
 }
-.game-image:hover{
- 
-    
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3c454c; /* Blue */
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.game-link {
+    text-decoration: none;
+    color: #333;
+}
+
+@media (max-width: 1024px) {
+    .game-card {
+        width: 45%;
+    }
+    .next-prev-buttons {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .game-card {
+        width: 100%;
+    }
+    .next-prev-buttons button {
+        font-size: 0.9rem;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-name {
+        font-size: 1rem;
+    }
+    .next-prev-buttons button {
+        font-size: 0.8rem;
+        height: 40px;
+    }
+}
+.game-filter-and-search{
+    display: flex;
+    width: 80%;
+    justify-content: baseline;
+    margin: 20px auto;
 }

@@ -1,23 +1,37 @@
-header{
+/* Header Component CSS */
+header {
     width: 100%;
     height: 100px;
     background-color: black;
     display: flex;
     align-items: center;
 }
-.logo-container{
+
+.logo-container {
     width: 20%;
     display: flex;
     justify-content: center;
 }
-.logo{
-    font-size: 50px;
+
+.logo {
+    font-size: 4rem; /* Değişiklik: Font boyutu artırıldı */
+    color: white; /* Değişiklik: Logo rengi beyaz yapıldı */
 }
-.navbar{
+
+.navbar {
     width: 80%;
     display: flex;
     justify-content: space-around;
+    align-items: center; /* Değişiklik: Navbar'ı ortalamak için eklendi */
 }
-header a{
+
+.navbar a {
     text-decoration: none;
+    font-size: 1.5rem; /* Değişiklik: Font boyutu artırıldı */
+    color: white; /* Değişiklik: Link rengi beyaz yapıldı */
+}
+
+.navbar a:hover {
+    color: lightgray; /* Değişiklik: Hover rengi değiştirildi */
+    cursor: pointer;
 }

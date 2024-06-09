@@ -8,11 +8,23 @@
 
 }
 .search-bar input{
-    height: 30px;
+    height: 40px;
     width: 60%;
     padding: 5px;
+    background-color: rgb(0, 0, 0);
+    outline: none;
+    border: none;
+    color: white;
 }
 .search-bar button{
     width: 20%;
-    height: 30px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    border-radius:  5px;
+}
+.search-bar :hover{
+    background-color: #3c3c3d;
+    cursor: pointer;
 }

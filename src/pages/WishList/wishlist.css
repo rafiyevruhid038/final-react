@@ -1,15 +1,20 @@
-.game-list{
-    width: 100%;
+.wishlist-games{
+    width: 90%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: black;
+    margin: 0 auto;
+    border-radius: 10px;
 }
-.game-card{
+.game-card-in-wishlist{
     width: 20%;
     border-radius: 10px;
     margin: 5px;
     position: relative;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    height: 380px;
+    transition: transform 0.3s;
 }
 .game-image{
     width: 100%;
@@ -27,17 +32,26 @@
     flex-direction: column;
 }
 
-
 .remove-to-wishlist{
     position: absolute;
     top: 0px;
     right: 7px;
     font-size: 30px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .remove-to-wishlist:hover{
-    color: green;
-}
-.remove-to-wishlist:active{
     color: red;
+}
+.no-game{
+    font-size: 40px;
+    margin: 20px;
+}
+.wishlist-text{
+    font-size: 35px;
+    display: inline-block;
+    margin: 10px auto;
+}
+.game-card-in-wishlist:hover{
+    opacity: 0.8;
+  
 }

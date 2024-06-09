@@ -1,0 +1,55 @@
+
+.footer-container {
+    background-color: black;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .about {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .about p:first-of-type {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .about p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .social-media-and-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-media img {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .social-media img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo-footer {
+    font-size: 50px;
+    margin-left: 20px;
+    color: #61dafb;
+  }
+  

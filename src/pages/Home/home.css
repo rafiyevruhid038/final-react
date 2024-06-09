@@ -1,10 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 .ads{
+    font-family: "Zen Dots", sans-serif;
     display: block;
-    width: 400px;
+    width: 90%;
+    font-size:55px;
     margin: 0 auto;
-    font-size:50px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
 }
 body{
-    background: linear-gradient(to right,rgb(36, 36, 82),rgba(0, 0, 0, 0.776));
+    background-color: #282c34;
     color: white;
+}
+.courusel{
+    background-color: black;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px rgb(45, 45, 68) solid;
+}
+
+.ads:hover{
+    cursor: pointer;
 }
