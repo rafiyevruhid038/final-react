@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/final-react/static/css/main.667a471e.css",
+    "main.js": "/final-react/static/js/main.d47a7b6d.js",
+    "static/media/facebook.jpg": "/final-react/static/media/facebook.c9a88127e4631aa1e5f4.jpg",
+    "index.html": "/final-react/index.html",
+    "main.667a471e.css.map": "/final-react/static/css/main.667a471e.css.map",
+    "main.d47a7b6d.js.map": "/final-react/static/js/main.d47a7b6d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.667a471e.css",
+    "static/js/main.d47a7b6d.js"
+  ]
+}
