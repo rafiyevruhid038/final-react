@@ -1,4 +1,16 @@
-.wishlist-games{
+.wishlist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wishlist-text {
+    font-size: 35px;
+    display: inline-block;
+    margin: 10px auto;
+}
+
+.wishlist-games {
     width: 90%;
     display: flex;
     justify-content: space-around;
@@ -7,51 +19,109 @@
     margin: 0 auto;
     border-radius: 10px;
 }
-.game-card-in-wishlist{
+
+.game-card-in-wishlist {
     width: 20%;
     border-radius: 10px;
     margin: 5px;
     position: relative;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-    height: 380px;
+    height: 300px;
     transition: transform 0.3s;
 }
-.game-image{
+
+.game-image-in-wishlist {
     width: 100%;
-    height: 40vh;
+    height: 60%;
     border-radius: 5px;
-}
-.game-name{
-    font-size:20px;
-    padding-left: 5px;
-    width: 70%;
-    height: 30px;
-}
-.wishlist-container{
-    display: flex;
-    flex-direction: column;
+    object-fit: cover;
 }
 
-.remove-to-wishlist{
+.game-name-in-wishlist {
+    font-size: 18px;
+    padding-left: 5px;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.remove-to-wishlist {
     position: absolute;
     top: 0px;
     right: 7px;
     font-size: 30px;
     color: rgb(255, 255, 255);
 }
-.remove-to-wishlist:hover{
+
+.remove-to-wishlist:hover {
     color: red;
 }
-.no-game{
+
+.no-game {
     font-size: 40px;
     margin: 20px;
 }
-.wishlist-text{
-    font-size: 35px;
-    display: inline-block;
-    margin: 10px auto;
-}
-.game-card-in-wishlist:hover{
+
+.game-card-in-wishlist:hover {
     opacity: 0.8;
-  
+}
+
+
+@media screen and (max-width: 1279px) and (min-width: 992px) {
+    .game-card-in-wishlist {
+        width: 30%;
+        height: 250px;
+    }
+
+    .game-image-in-wishlist {
+        height: 60%;
+    }
+
+    .game-name-in-wishlist {
+        font-size: 16px;
+    }
+
+    .remove-to-wishlist {
+        font-size: 25px;
+    }
+
+    .wishlist-text {
+        font-size: 30px;
+    }
+
+    .no-game {
+        font-size: 35px;
+    }
+}
+
+
+@media screen and (max-width: 991px) and (min-width: 320px) {
+    .game-card-in-wishlist {
+        width: 45%;
+        height: 200px;
+    }
+
+    .game-image-in-wishlist {
+        height: 60%;
+    }
+
+    .game-name-in-wishlist {
+        font-size: 14px;
+    }
+
+    .remove-to-wishlist {
+        font-size: 20px;
+    }
+
+    .wishlist-text {
+        font-size: 25px;
+    }
+
+    .no-game {
+        font-size: 30px;
+    }
 }

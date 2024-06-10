@@ -1,4 +1,3 @@
-/* game-filter.css */
 .filter-container {
     margin-bottom: 10px;
     position: absolute;
@@ -37,4 +36,17 @@
 
 .checkbox-container input {
     margin-right: 10px;
+}
+@media screen and (max-width: 991px) and (min-width: 320px) {
+    .filter-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-size: 17px;
+       
+    }
+    .filter-button span {
+        display: none; 
+    }
 }

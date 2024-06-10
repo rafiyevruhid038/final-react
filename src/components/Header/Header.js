@@ -5,6 +5,7 @@ import {Link} from "react-router-dom"
 import { BsBasket2 } from "react-icons/bs";
 import { LuFolderHeart } from "react-icons/lu";
 import { FaSignInAlt } from "react-icons/fa";
+import joystick from "../../icons/joystick.png";
 
 
 
@@ -13,7 +14,7 @@ const Header = () => {
   return (
     <header>
         <div className='logo-container'>
-            <Link to="/"><div className='logo'><BiJoystick /></div></Link>
+            <Link to="/"><div className='logo'><img src={joystick} alt="joystick"/></div></Link>
         </div>
         <div className='navbar'>
        

@@ -1,4 +1,3 @@
-// src/components/WishList/WishList.js
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { MdOutlineHeartBroken } from "react-icons/md";
@@ -22,8 +21,8 @@ const WishList = () => {
           wishlist.map((game) => (
             <div key={game.id} className="game-card-in-wishlist">
             <Link to={`/game/${game.id}`} className='game-link'>
-              <img src={game.background_image} alt={game.name} className="game-image" />
-              <p className="game-name">{game.name}</p>
+              <img src={game.background_image} alt={game.name} className="game-image-in-wishlist" />
+              <p className="game-name-in-wishlist">{game.name}</p>
             </Link>
               <div className='remove-to-wishlist' onClick={() => handleRemoveFromWishlist(game.id)}><MdOutlineHeartBroken /></div>
             </div>

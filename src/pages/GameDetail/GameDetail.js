@@ -10,7 +10,7 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 const GameDetail = () => {
     const { id } = useParams();
     const dispatch = useDispatch();
-    const { selectedGame, screenshots, status, error } = useSelector((state) => state.games);
+    const { selectedGame, screenshots, status } = useSelector((state) => state.games);
     const [imageIndex, setImageIndex] = useState(0);
     const [gameGenres, setGameGenres] = useState([]);
 
@@ -31,7 +31,7 @@ const GameDetail = () => {
     };
 
     const handleAddToCart = (game) => {
-        dispatch(addToCart(game)); // Dispatching the addToCart action with the selected game
+        dispatch(addToCart(game)); 
     };
 
     const nextImage = () => {

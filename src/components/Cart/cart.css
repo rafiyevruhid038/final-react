@@ -49,12 +49,17 @@
     font-size: 18px;
     color: #0073e6;
     width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .game-image-in-cart {
     width: 60px;
     height: 60px;
     border-radius: 5px;
+    object-fit: cover;
+    text-align: center;
 }
 
 .price {
@@ -96,7 +101,8 @@
     font-weight: bold;
     color: #ffffff;
 }
-.payment{
+
+.payment {
     background-color: rgb(30, 30, 45);
     cursor: pointer;
     color: white;
@@ -106,7 +112,85 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     border: none;
 }
-.payment:hover{
+
+.payment:hover {
     background-color: #01b079;
     color: #fff;
+}
+
+
+@media screen and (max-width: 1279px) and (min-width: 992px) {
+    .games-in-basket {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .game-link-in-cart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-name-in-cart {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .game-image-in-cart {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .price, .remove-from-cart {
+        margin-top: 10px;
+    }
+
+    .total-price {
+        font-size: 18px;
+    }
+
+    .cart-text {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 320px) {
+    .games-in-basket {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .game-link-in-cart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-name-in-cart {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .game-image-in-cart {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .price, .remove-from-cart {
+        margin-top: 10px;
+    }
+
+    .total-price {
+        font-size: 16px;
+    }
+
+    .cart-text {
+        font-size: 24px;
+    }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { removeFromCart } from '../../redux/slices/cartSlice';
 import { Link } from 'react-router-dom';
-import './cart.css'; // Stil dosyasını import ediyoruz
+import './cart.css';
 
 const Cart = () => {
     const dispatch = useDispatch();

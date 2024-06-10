@@ -7,10 +7,10 @@
     margin: 0;
 }
 .gamePoster-rtl {
-    width: 600px; /* Adjusted width */
-    height: 300px; /* Adjusted height */
+    width: 600px;
+    height: 300px;
     position: absolute;
-    left: -600px; /* Adjusted start position */
+    left: -600px;
     animation-name: scrollright;
     animation-duration: 30s;
     animation-timing-function: linear;
@@ -26,7 +26,7 @@
     max-width: 1536px;
     margin-inline: auto;
     position: relative;
-    height: 300px; /* Adjusted height */
+    height: 300px;
     margin-top: 5rem;
     overflow: hidden;
     mask-image: linear-gradient(
@@ -39,7 +39,7 @@
 }
 @keyframes scrollright {
     to {
-        left: max(calc(600px * 5), 100%); /* Adjusted end position */
+        left: max(calc(600px * 5), 100%);
     }
 }
 .img-rtl0 {
@@ -101,4 +101,19 @@
 }
 .img-rtl19 {
     animation-delay: calc(100s / 20 * (20 - 19) * -1);
+}
+@media screen and (max-width: 1279px) and (min-width: 992px){
+    .gamePoster-rtl {
+        width: 400px;
+        height: 200px;
+    }
+    
+
+}
+@media screen and (max-width: 991px) and (min-width: 320px) {
+    .gamePoster-rtl {
+        width: 300px;
+        height: 150px;
+    }
+
 }

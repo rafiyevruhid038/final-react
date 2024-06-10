@@ -7,7 +7,7 @@ const initialState = {
   status: 'idle',
   error: null,
   selectedGame: null,
-  screenshots: [], // screenshots state'i ekledim
+  screenshots: [], 
   filters: [], 
 };
 
@@ -113,7 +113,7 @@ export const { setGameName, setFilters, nextPage, prevPage } = gamesSlice.action
 
 export const fetchNextPage = () => async (dispatch, getState) => {
   const { games } = getState();
-  if (games.gameData.length === 20) { // Burada 20, sayfa başına oyun sayısını ifade ediyor
+  if (games.gameData.length === 20) { 
     dispatch(nextPage());
     dispatch(fetchGames({ gameName: games.gameName, page: games.page, filters: games.filters }));
   }
