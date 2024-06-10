@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/final-react/static/css/main.93e3de16.css",
-    "main.js": "/final-react/static/js/main.789a5b8f.js",
+    "main.js": "/final-react/static/js/main.7aac4116.js",
     "static/media/joystick.png": "/final-react/static/media/joystick.ecffe6a0bc25acfeca4c.png",
     "index.html": "/final-react/index.html",
     "main.93e3de16.css.map": "/final-react/static/css/main.93e3de16.css.map",
-    "main.789a5b8f.js.map": "/final-react/static/js/main.789a5b8f.js.map"
+    "main.7aac4116.js.map": "/final-react/static/js/main.7aac4116.js.map"
   },
   "entrypoints": [
     "static/css/main.93e3de16.css",
-    "static/js/main.789a5b8f.js"
+    "static/js/main.7aac4116.js"
   ]
 }
