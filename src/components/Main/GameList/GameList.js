@@ -12,8 +12,6 @@ const GameList = () => {
     const dispatch = useDispatch();
     const { gameData, gameName, page, status, error, filters } = useSelector((state) => state.games);
     
-    
-
     useEffect(() => {
         dispatch(fetchGames({ gameName, page, filters }));
     }, [gameName, page, filters, dispatch]);
@@ -34,7 +32,6 @@ const GameList = () => {
         }
     };
     
-
     const handleAddToWishlist = (game) => {
         dispatch(addToWishlist(game));
     };
@@ -46,11 +43,12 @@ const GameList = () => {
     return (
         <div className='game-container'>
             <div className='game-filter-and-search'>
-            <GameFilter onFilterChange={handleFilterChange} />
-            <SearchBar onSearch={handleSearch} />
+                <GameFilter onFilterChange={handleFilterChange} />
+                <SearchBar onSearch={handleSearch} />
             </div>
             {status === 'loading' && <div className="loader"></div>}
             {status === 'failed' && <p>{error}</p>}
+            {status === 'succeeded' && gameData.length === 0 && <p>No Results Found</p>}
             <div className="game-list">
                 {gameData.map((game) => (
                     <div key={game.id} className="game-card">

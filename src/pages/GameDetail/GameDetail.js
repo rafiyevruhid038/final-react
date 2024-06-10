@@ -82,6 +82,7 @@ const GameDetail = () => {
                 <p>Genres: {gameGenres.join(', ')}</p>
                 <p>Last Update: {selectedGame.updated}</p>
                 <a href={selectedGame.website} target='_blank' rel='noopener noreferrer'>The official website</a>
+                <p>Price:12.99$</p>
             </div>
             <div className='add-buttons'>
                 <button onClick={() => handleAddToWishlist(selectedGame)}>Add to Wishlist</button>
