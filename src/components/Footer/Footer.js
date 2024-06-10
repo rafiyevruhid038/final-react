@@ -1,7 +1,6 @@
 import React from 'react';
 import { BiJoystick } from "react-icons/bi";
 import './footer.css';
-import facebook from "../../icons/facebook.jpg";
 import instagram from "../../icons/insta.jpg";
 import twich from "../../icons/twich.png";
 import x from "../../icons/x.png";
@@ -21,7 +20,6 @@ const Footer = () => {
       </div>
       <div className='social-media-and-logo'>
         <div className='social-media'>
-          <img src={facebook} alt='facebook' />
           <img src={instagram} alt='instagram' />
           <img src={twich} alt='twich' />
           <img src={x} alt='x' />

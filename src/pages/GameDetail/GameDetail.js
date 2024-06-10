@@ -4,8 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchGameDetail, fetchScreenshots } from '../../redux/slices/gamesSlice';
 import { addToWishlist } from '../../redux/slices/wishlistSlice';
 import { addToCart } from '../../redux/slices/cartSlice';
-import './game-detail.css';
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import './game-detail.css';
+
 
 const GameDetail = () => {
     const { id } = useParams();
