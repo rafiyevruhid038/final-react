@@ -1,15 +1,14 @@
 {
   "files": {
     "main.css": "/final-react/static/css/main.93e3de16.css",
-    "main.js": "/final-react/static/js/main.06991c42.js",
+    "main.js": "/final-react/static/js/main.789a5b8f.js",
     "static/media/joystick.png": "/final-react/static/media/joystick.ecffe6a0bc25acfeca4c.png",
-    "static/media/facebook.jpg": "/final-react/static/media/facebook.c9a88127e4631aa1e5f4.jpg",
     "index.html": "/final-react/index.html",
     "main.93e3de16.css.map": "/final-react/static/css/main.93e3de16.css.map",
-    "main.06991c42.js.map": "/final-react/static/js/main.06991c42.js.map"
+    "main.789a5b8f.js.map": "/final-react/static/js/main.789a5b8f.js.map"
   },
   "entrypoints": [
     "static/css/main.93e3de16.css",
-    "static/js/main.06991c42.js"
+    "static/js/main.789a5b8f.js"
   ]
 }
